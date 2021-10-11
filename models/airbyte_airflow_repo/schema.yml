@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: postgres
+    description: 'A local database that contains some Airflow data result of EL process from Airbyte'
+    database: postgres
+    schema: public
+    tables:
+      - name: airbyte_issues
+        description: 'Contains of Airflow issues in their Github repository'
